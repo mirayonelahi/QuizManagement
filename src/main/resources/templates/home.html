@@ -14,14 +14,39 @@
 
    <div th:insert="menu.html :: menu"></div>
 
-   <div class="main-container">
-
+   <div class="main-container py-5 px-4">
 <div class="image-container">
 	<img th:src="@{/images/image.jpg}">
+	<h3 id ="Greeting"></h3>
+	<script>
+
+
+function time(){
+
+var today = new Date();
+var hourNow = today.getHours();
+var el = document.getElementById("Greeting");
+
+  if (hourNow < 12) {
+                     el.innerHTML = 'Good Morning Students! Take a Coffee Break & Get Ready for the Quiz. ';
+                  } else if (hourNow >= 12 && hourNow <= 17){
+                     el.innerHTML = 'Good Afternoon Students! Are you ready for Quiz?';
+                  } else if (hourNow >= 17 && hourNow <= 24){
+                     el.innerHTML = 'Good Evening Students! Are you ready for Quiz?'
+                  }
+
+}
+
+window.onload = function(){
+
+time()
+}
+  </script>
 </div>
 
-   </div>
 
+   </div>
+   <script src="index.js" type="text/javascript"></script>
    <div th:insert="footer.html :: footer"></div>
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
