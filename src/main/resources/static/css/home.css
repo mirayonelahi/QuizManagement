@@ -54,21 +54,6 @@ body {
     justify-content: center;
 }
 
-.card {
-width: 100%;}
-
-.card p {
-color: #fff;
-font-size: 20px;
-margin-bottom: 15px;
-}
-
-.card input {
-margin-bottom:50px;
-height:40px;
-}
-
-
 
 footer {
             height: 50px;
