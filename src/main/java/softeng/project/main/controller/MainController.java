@@ -10,12 +10,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import softeng.project.main.model.QuestionForm;
 import softeng.project.main.model.Result;
+import softeng.project.main.service.QuizService;
 
 @Controller
 public class MainController {
 
     @Autowired
     Result result;
+    @Autowired
+    QuizService qService;
 
     Boolean submitted = false;
 
@@ -44,9 +47,10 @@ public class MainController {
 
         submitted = false;
         result.setUsername(username);
+        QuestionForm qForm = qService.getQuestions();
+        m.addAttribute("qForm", qForm);
 
-
-        return "quiz.html";
+        return "questions.html";
     }
 }
 
