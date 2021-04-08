@@ -91,4 +91,8 @@ public class QuizService {
     public Question createBook(Question question) {
         return qRepo.save(question);
     }
+
+    public void deleteUser(Integer id) {
+        qRepo.deleteById(id);
+    }
 }
