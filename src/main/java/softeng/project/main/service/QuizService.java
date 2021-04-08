@@ -95,4 +95,8 @@ public class QuizService {
     public void deleteUser(Integer id) {
         qRepo.deleteById(id);
     }
+
+    public Question getQuestion(Integer id) {
+        return qRepo.findById(id).get();
+    }
 }
