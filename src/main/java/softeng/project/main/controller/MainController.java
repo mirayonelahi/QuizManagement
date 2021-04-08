@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import softeng.project.main.model.Question;
 import softeng.project.main.model.QuestionForm;
 import softeng.project.main.model.Result;
 import softeng.project.main.service.QuizService;
@@ -38,6 +39,31 @@ public class MainController {
     public String quiz() {
         return "quiz.html";
 
+    }
+
+    @GetMapping("/addQuestion")
+    public String addQuestion(Model model) {
+        // create model attribute to bind form data
+        Question question = new Question();
+        model.addAttribute("question", question);
+        return "addQuestion";
+    }
+
+
+
+    @PostMapping("/saveQuestion")
+    public String saveEmployee(@ModelAttribute("question") Question question) {
+        // save employee to database
+        qService.saveQuestion(question);
+        return "redirect:/addQuestion";
+    }
+
+    @GetMapping("/allquestionui")
+    public String allquestionui(Model model) {
+        // create model attribute to bind form data
+        QuestionForm qForm = qService.getAllQuestionsUi();
+        model.addAttribute("qForm", qForm);
+        return "all_questions";
     }
 
     @PostMapping("/questions")

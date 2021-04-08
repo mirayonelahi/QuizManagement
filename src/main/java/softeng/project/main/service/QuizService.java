@@ -10,6 +10,7 @@ import softeng.project.main.repository.QuestionRepo;
 import softeng.project.main.repository.ResultRepo;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 
@@ -33,7 +34,7 @@ public class QuizService {
 
         Random random = new Random();
 
-        for(int i=0; i<5; i++) {
+        for (int i = 0; i < 5; i++) {
             int rand = random.nextInt(allQues.size());
             qList.add(allQues.get(rand));
             allQues.remove(rand);
@@ -44,12 +45,19 @@ public class QuizService {
         return qForm;
     }
 
+    public QuestionForm getAllQuestionsUi() {
+        List<Question> allQues = qRepo.findAll();
+        qForm.setQuestions(allQues);
+
+        return qForm;
+    }
+
 
     public int getResult(QuestionForm qForm) {
         int correct = 0;
 
-        for(Question q: qForm.getQuestions())
-            if(q.getAns() == q.getChose())
+        for (Question q : qForm.getQuestions())
+            if (q.getAns() == q.getChose())
                 correct++;
 
         return correct;
@@ -67,4 +75,17 @@ public class QuizService {
 
         return sList;
     }
+
+
+    public void saveQuestion(Question question) {
+        this.qRepo.save(question);
+    }
+
+    public Collection<Question> listAllQuestion() {
+        Collection<Question> allQues = qRepo.findAll();
+        return allQues;
+
+    }
+
+
 }
