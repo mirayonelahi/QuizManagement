@@ -88,4 +88,7 @@ public class QuizService {
     }
 
 
+    public Question createBook(Question question) {
+        return qRepo.save(question);
+    }
 }

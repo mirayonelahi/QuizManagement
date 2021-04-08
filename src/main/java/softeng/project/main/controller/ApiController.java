@@ -2,6 +2,8 @@ package softeng.project.main.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import softeng.project.main.model.Question;
 import softeng.project.main.service.QuizService;
@@ -19,5 +21,14 @@ public class ApiController {
     public Collection<Question> list() {
         return quizService.listAllQuestion();
     }
+
+    @PostMapping("/apiaddquestion")
+    public Question postBook(@RequestBody Question question){
+        return  quizService.createBook(question);
+
+    }
+
+
+
 
 }
