@@ -52,5 +52,16 @@ public class MainController {
 
         return "questions.html";
     }
+
+    @PostMapping("/submit")
+    public String submit(@ModelAttribute QuestionForm qForm, Model m) {
+        if(!submitted) {
+            result.setTotalCorrect(qService.getResult(qForm));
+            qService.saveScore(result);
+            submitted = true;
+        }
+
+        return "result.html";
+    }
 }
 
