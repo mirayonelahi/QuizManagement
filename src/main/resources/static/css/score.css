@@ -8,3 +8,28 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 }
+
+.main-container {
+	min-height: calc(100vh - 136px);
+}
+
+table {
+	width: 100%;
+	text-align: center;
+}
+
+tr {
+	border: 1px solid white;
+}
+
+th, td {
+	padding: 10px;
+}
+
+
+footer {
+            height: 50px;
+            text-align: center;
+            line-height:50px;
+            font-weight:bold;
+    }

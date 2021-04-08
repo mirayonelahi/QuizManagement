@@ -12,6 +12,8 @@ import softeng.project.main.model.QuestionForm;
 import softeng.project.main.model.Result;
 import softeng.project.main.service.QuizService;
 
+import java.util.List;
+
 @Controller
 public class MainController {
 
@@ -62,6 +64,14 @@ public class MainController {
         }
 
         return "result.html";
+    }
+
+    @GetMapping("/score")
+    public String score(Model m) {
+        List<Result> sList = qService.getTopScore();
+        m.addAttribute("sList", sList);
+
+        return "leaderboard.html";
     }
 }
 
