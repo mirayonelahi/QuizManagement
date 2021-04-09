@@ -15,10 +15,10 @@
 <div class="main-container py-5 px-4">
 
     <div class="container py-5 px-4">
-        <h1 class="bg-danger text-light">All Questions</h1>
+        <h1 class="bg-primary text-white">All Questions</h1>
 
         <form action="" method="GET" th:object=${qForm}>
-            <div class="ques-box bg-dark text-light" th:each="ques, i: ${qForm.questions}">
+            <div class="ques-box bg-success text-white" th:each="ques, i: ${qForm.questions}">
                 <p class="title" th:text="${ques.title}"></p>
 
                 <div class="option">

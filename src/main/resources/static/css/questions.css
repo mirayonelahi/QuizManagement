@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
 	width: 100%;
 	overflow-x: hidden;
 }
@@ -48,5 +49,7 @@ footer {
             text-align: center;
             line-height:50px;
             font-weight:bold;
+
+
     }
 

@@ -14,9 +14,9 @@
 <div th:insert="menu.html :: menu"></div>
 <div class="main-container py-5 px-4">
 <div class="box">
-	<h1 class="mb-5 text-center">Sping Boot Quiz App</h1>
+	<h1 class="mb-5 text-center">Quiz 1</h1>
 	<form class="card bg-primary py-5 px-4" action="/questions" method="POST">
-		<p>Enter The Student's Full Name</p>
+		<p class="text-center ">Enter The Student's Full Name</p>
 		<input type="text" name="username">
 		<p class="text-danger warning" th:if="${warning}" th:text="${warning}"></p>
 		<button type="submit" class="btn btn-dark">Start The Quiz</button>
