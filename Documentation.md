@@ -24,21 +24,27 @@ Business requirements deal with the reason for the creating the webapp. On the o
 
 User stories are most important technique to express requirements from the client side. It has special consistent format to define the needs.
 
-The Who is in our app is the student who will attempt the quiz.
+The <b>Who</b> is in our app is the student who will attempt the quiz.
 
-The What is the score that student will get after attempting.
+The <b>What</b> is the score that student will get after attempting.
 
-The why is the reason behind this app. In our case, it is for the exams. 
+The <b>why</b> is the reason behind this app. In our case, it is for the exams. 
 
 
 <h3>UML Diagrams</h3>
 
 ![1 (2)](https://user-images.githubusercontent.com/68749280/114256260-fa500d00-996c-11eb-910c-31fb9bb6f5f2.jpeg)
 
-![6](https://user-images.githubusercontent.com/68791474/114256879-3e451100-9971-11eb-9982-75eae15ed236.png)
+<h3>Use Case Diagram</h3>
 
 ![3](https://user-images.githubusercontent.com/68791474/114256880-3e451100-9971-11eb-9bc1-595898a85b28.png)
 
+
+<h3>Estimations & Plans</h3>
+
+	Our plan was to make this app more attractive and simpler, so that both users and admin found them easy to use and manage. We discussed over the phones and online sessions to make a following plan for developing our project.
+  
+![6](https://user-images.githubusercontent.com/68791474/114256879-3e451100-9971-11eb-9982-75eae15ed236.png)
 
 <h3>Experience</h3>	
 
