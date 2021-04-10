@@ -5,15 +5,6 @@ We have developed quiz management web application. This application is designed 
 Our project has the features of planning quiz questions. These questions are based on objective type therefore very detailed information need to be added. In our app an admin creates quiz test by creating questions with correct answers. The user can just enter his name and ready to take the quiz. At the end of the quiz, user can also view his result based on the questions attempted.
 
 
-<h3>How to Run Our Web Application</h3>
-
-Before running our application, it’s required to create a database named “quiz”. As we are using MySQL database for our application on localhost, so it’s required to start Apache and MySQL on XAMPP control panel before starting our application.
-
-![1 (3)](https://user-images.githubusercontent.com/68749280/114256261-fa500d00-996c-11eb-9108-0b1cccd25e64.jpeg)
-
-![1 (4)](https://user-images.githubusercontent.com/68749280/114256262-fae8a380-996c-11eb-9a8c-523146acd030.jpeg)
-
-
 <h3>Requirements and User Stories</h3>
 
 Requirement can be defined as needs that are defined by clients. Its hard for a client to define all his needs, so in order to get this work done it is the job of the software project manager to help the client to clear its needs.
@@ -39,12 +30,21 @@ The <b>why</b> is the reason behind this app. In our case, it is for the exams.
 
 ![3](https://user-images.githubusercontent.com/68791474/114256880-3e451100-9971-11eb-9bc1-595898a85b28.png)
 
+![Use Case Diagram](https://user-images.githubusercontent.com/68749413/114257634-2fad2880-9976-11eb-88ff-7c74292eed6b.png)
+
+<h3>Scheduling</h3>
+
+![Scheduling](https://user-images.githubusercontent.com/68749413/114257633-2de36500-9976-11eb-8927-9f798ad0321e.png)
+
+
 
 <h3>Estimations & Plans</h3>
 
-	Our plan was to make this app more attractive and simpler, so that both users and admin found them easy to use and manage. We discussed over the phones and online sessions to make a following plan for developing our project.
+Our plan was to make this app more attractive and simpler, so that both users and admin found them easy to use and manage. We discussed over the phones and online sessions to make a following plan for developing our project.
+
   
 ![6](https://user-images.githubusercontent.com/68791474/114256879-3e451100-9971-11eb-9982-75eae15ed236.png)
+
 
 <h3>Experience</h3>	
 
