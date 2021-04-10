@@ -32,7 +32,22 @@ The why is the reason behind this app. In our case, it is for the exams.
 
 
 <h3>UML Diagrams</h3>
+
 ![1 (2)](https://user-images.githubusercontent.com/68749280/114256260-fa500d00-996c-11eb-910c-31fb9bb6f5f2.jpeg)
+
+![6](https://user-images.githubusercontent.com/68791474/114256879-3e451100-9971-11eb-9982-75eae15ed236.png)
+
+![3](https://user-images.githubusercontent.com/68791474/114256880-3e451100-9971-11eb-9bc1-595898a85b28.png)
+
+
+<h3>Experience</h3>	
+
+During our project development we have learned about model view controller (mvc) architectural pattern which has become the most popular and powerful framework since it improves development process of web services and web applications.
+We also have learned about unit testing, integration testing and restapi.
+During our project development there had some obstacles such as poor time management because each of members had different time availability which is the most common obstacles that people overcome during a software development project. 
+We had some Issues with Integration - database (mysql,jpa), view (mysql, thymeleaf).
+Overall, It was quite challenging and fun to develop our application because We have learned a lot new things from this project. 
+
 
 
 
